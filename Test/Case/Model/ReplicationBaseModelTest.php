@@ -44,7 +44,7 @@ class Comment extends AppModel {
  *
  * @package       Cake.Test.Case.Model
  */
-class BaseModelTest extends CakeTestCase {
+class ReplicationBaseModelTest extends CakeTestCase {
 
 	public $fixtures = array('core.article', 'core.comment');
 

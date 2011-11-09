@@ -10,10 +10,10 @@ class ReplicationBaseModel extends Model {
 	public function __construct($id = false, $table = null, $ds = null) {
 		parent::__construct($id, $table, $ds);
 
-		$dbConfig = ConnectionManager::getDataSource($this->useDbConfig);
-		if (!empty($dbConfig->config['master'])) {
+		$db = $this->getDataSource();
+		if (!empty($db->config['master'])) {
 			$this->defaultDbConfig = $this->useDbConfig;
-			$this->masterDbConfig = $dbConfig->config['master'];
+			$this->masterDbConfig = $db->config['master'];
 		}
 	}
 

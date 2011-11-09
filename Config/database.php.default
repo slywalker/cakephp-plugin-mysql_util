@@ -3,19 +3,20 @@ class DATABASE_CONFIG {
 
 /**
  * Slave DB Config as defult
+ *
  * driver => The name of a supported driver; valid options are as follows:
- *		Database/Innodb 		- MySQL Innodb,
+ *		MysqlUtil.Database/Innodb 		- MySQL Innodb,
  *
  * master =>
  * the name that master's config
  *
- * dammyPrimaryField =>
+ * dammy =>
  * the dammy primary field name when it uses uuid primary in innodb
  *
  * @var array
  */
 	public $default = array(
-		'datasource' => 'Database/Mysql',
+		'datasource' => 'MysqlUtil.Database/Innodb',
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
@@ -24,6 +25,7 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		'encoding' => 'utf8',
 		'master' => 'master',
+		'dammy' => 'added_id',
 	);
 
 /**
@@ -35,7 +37,7 @@ class DATABASE_CONFIG {
  * @var array
  */
 	public $master = array(
-		'datasource' => 'Database/Mysql',
+		'datasource' => 'MysqlUtil.Database/Innodb',
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
@@ -43,5 +45,6 @@ class DATABASE_CONFIG {
 		'database' => 'test',
 		'prefix' => '',
 		'encoding' => 'utf8',
+		'dammy' => 'added_id',
 	);
 }

@@ -21,7 +21,7 @@ class Innodb extends Mysql {
 
 		if (!empty($this->config['dammy'])) {
 			foreach ($fields as $name => $value) {
-				if (in_array($name, $this->config['dammy'])) {
+				if ($name === $this->config['dammy']) {
 					unset($fields[$name]);
 				}
 			}
@@ -35,7 +35,7 @@ class Innodb extends Mysql {
 
 		if (!empty($this->config['dammy'])) {
 			foreach ($index as $key => $value) {
-				if (in_array($value['column'], $this->config['dammy'])) {
+				if ($value['column'] === $this->config['dammy']) {
 					unset($index[$key]);
 				}
 			}

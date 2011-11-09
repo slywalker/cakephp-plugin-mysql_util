@@ -1,0 +1,42 @@
+<?php
+class DATABASE_CONFIG {
+
+/**
+ * Slave DB Config as defult
+ *
+ * master =>
+ * the name that master's config
+ *
+ * @var array
+ */
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => 'password',
+		'database' => 'test',
+		'prefix' => '',
+		'encoding' => 'utf8',
+		'master' => 'master',
+	);
+
+/**
+ * Master DB Config
+ *
+ * master =>
+ * the name that master's config
+ *
+ * @var array
+ */
+	public $master = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => 'password',
+		'database' => 'test',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+}

@@ -3,9 +3,14 @@ class DATABASE_CONFIG {
 
 /**
  * Slave DB Config as defult
+ * driver => The name of a supported driver; valid options are as follows:
+ *		Database/Innodb 		- MySQL Innodb,
  *
  * master =>
  * the name that master's config
+ *
+ * dammyPrimaryField =>
+ * the dammy primary field name when it uses uuid primary in innodb
  *
  * @var array
  */

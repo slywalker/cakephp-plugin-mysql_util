@@ -1,7 +1,7 @@
 <?php
-App::uses('BaseModel', 'MysqlReplication.Model');
+App::uses('ReplicationBaseModel', 'MysqlUtil.Model');
 
-class AppModel extends BaseModel {
+class AppModel extends ReplicationBaseModel {
 
 	public $isMasterAtBeforeValidate = false;
 

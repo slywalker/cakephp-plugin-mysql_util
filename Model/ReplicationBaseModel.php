@@ -26,7 +26,7 @@ class ReplicationBaseModel extends Model {
 		}
 	}
 
-	public function useDafaultDb() {
+	public function useDefaultDb() {
 		if ($this->defaultDbConfig && $this->defaultDbConfig !== $this->useDbConfig) {
 			if (Configure::read('debug')) {
 				$this->query('-- SET ' . strtoupper($this->defaultDbConfig));

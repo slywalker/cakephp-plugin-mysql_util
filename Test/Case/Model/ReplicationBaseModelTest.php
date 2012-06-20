@@ -57,12 +57,12 @@ class ReplicationBaseModelTest extends CakeTestCase {
 		ClassRegistry::flush();
 	}
 
-	public function testUseMasterDbAndUseDafaultDb() {
+	public function testUseMasterDbAndUseDefaultDb() {
 		$Article = ClassRegistry::init('Article');
 		$this->assertFalse(($Article->useDbConfig === 'master'));
 		$Article->useMasterDb();
 		$this->assertTrue(($Article->useDbConfig === 'master'));
-		$Article->useDafaultDb();
+		$Article->useDefaultDb();
 		$this->assertFalse(($Article->useDbConfig === 'master'));
 	}
 

@@ -1,0 +1,25 @@
+{
+    "name": "slywalker/mysql_util",
+    "type": "cakephp-plugin",
+    "description": "CakePHP MySQL Util Plugin",
+    "keywords": [
+        "cakephp",
+        "mysql"
+    ],
+    "homepage": "https://github.com/slywalker/cakephp-plugin-mysql_util",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yasuo Harada",
+            "email": "slywalker.net@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/slywalker/cakephp-plugin-mysql_util/issues",
+        "source": "https://github.com/slywalker/cakephp-plugin-mysql_util"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "composer/installers": "*"
+    }
+}
